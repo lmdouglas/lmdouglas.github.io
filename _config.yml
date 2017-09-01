@@ -17,7 +17,7 @@ title: ML with LM
 #email: LMDouglas91@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
    Learn machine learning with me, Lauren, as I learn myself! 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/lmdouglas.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lmdouglaz
 github_username:  lmdouglas
@@ -25,6 +25,7 @@ linkedin_username: lauren-marie-douglas
 
 # Build settings
 markdown: kramdown
+mathjax: true
 theme: minima
 plugins:
   - jekyll-feed
