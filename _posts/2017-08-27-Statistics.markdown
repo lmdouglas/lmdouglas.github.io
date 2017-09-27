@@ -5,6 +5,8 @@ date:   2017-08-27 20:30:15 +0100
 categories: statistics, python
 mathjax: true
 ---
+"When you begin to know the intermediate/advanced, learn the basics again. They'll be useful."
+
 Let's dive into some basic statistics! I will be using python to demonstrate topics using the pandas package and house price data obtained from <a href="https://www.ros.gov.uk/property-data/house-price-search">Registers of Scotland</A>. In the future I plan to revisit this page and rewrite for R.
 
 Skip to...
@@ -182,8 +184,21 @@ The mean, median and mode do a good job telling us where the centre of a dataset
 
 ### Variance ###
 
-The *variance* is defined as
+The *sample variance* in a distribution with *n* data points is defined as
 
-\\[s^{2} = \frac{1}{n-1} \displaystyle\sum_{i=1}^n (x-\bar{x})^2 \\]
+\\[s^{2} = \frac{1}{n-1} \displaystyle\sum_{i=1}^n (x_i-\bar{x})^2 \\]
 
-i.e. the average of the squared differences from the mean.
+i.e. the average of the squared differences from the mean. The variance is a measure of how "spread-out" the data is.
+
+The *population variance* is defined as
+
+\\[s^{2} = \frac{1}{n} \displaystyle\sum_{i=1}^n (x_i-\mu)^2 \\]
+
+where the denominator is *n* as opposed to *n-1*. While the *sample mean* is an unbiased estimator of the *population mean*, the sample varince is not of the population variance. 
+
+### Standard Deviation ###
+
+The *standard deviation* is the square root of the variance. It is a measure of dispersion of observations within a dataset. Being the square root of the sum of squared value the units of standard deviation are the same as those in the dataset. Handy!
+
+That's all for now! Next time: Probability density functions!
+

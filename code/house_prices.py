@@ -84,3 +84,8 @@ g4_1.groupby('Year of Sale')['Price'].mean().plot.bar()
 g4_1.groupby('Year of Sale')['Price'].median().plot.bar()
 
 g4_1['Price'].plot.hist(by=None,bins=20)
+
+
+
+
+
