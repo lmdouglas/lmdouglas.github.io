@@ -89,3 +89,4 @@ g4_1['Price'].plot.hist(by=None,bins=20)
 
 
 
+

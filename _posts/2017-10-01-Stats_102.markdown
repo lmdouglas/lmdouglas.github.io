@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Statistics 102"
+date:   2017-10-01 15:32:25 +0100
+categories: statistics, python
+---
+
+Let's continue our journey into basic statistics! I now want to go over probability density functions.
+
+### Probability Density Functions ###
+
+If a variable is **continuous** it can take on an uncountably infinite number of values. 
+

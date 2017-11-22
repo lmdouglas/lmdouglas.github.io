@@ -141,6 +141,7 @@ Out: 80000.0
 
 That's a very different number to the mean - it's only 63% of the value! Why the discrepancy? Well the mean is very sensitive to abnormal values, wheras the median is not significantly changed by outliers. So having a handful of houses sold for a large amount will affect the mean but not so much the median. When you have a clean dataset with few outliers these values will be in agreement with each other but apparently my dataset is not in this category.
 
+The discrepancy between the mean and the median is also affected by the fact that our distribution is *not* a normal distribution, but it is in fact *skewed*. I'll come back to this another time!
 
 {%highlight python%}
 g4_1.groupby('Year of Sale')['Price'].median().plot.bar()
@@ -199,6 +200,18 @@ where the denominator is *n* as opposed to *n-1*. While the *sample mean* is an 
 ### Standard Deviation ###
 
 The *standard deviation* is the square root of the variance. It is a measure of dispersion of observations within a dataset. Being the square root of the sum of squared value the units of standard deviation are the same as those in the dataset. Handy!
+
+Let's check the variance and standard deviation of our dataset. This is easily done using the var() and std() functions, which are implemented in a pandas dataframe.
+
+{%highlight python%}
+In: g4_1['Price'].var()
+Out: 97290948074.07443
+
+In: g4_1['Price'].std()
+Out: 311914.96930104913
+{%endhighlight%}
+
+So what are these actually telling us? Well firstly you can see why the standard deviation is a better known measure of variation. It is in the same units and also in the same scale - we don't have any houses that were sold for or anywhere near £97,290,948,074! If our distribution were a symmetrical, normal distribution then 68% of all entries would fall within *one* standard deviation from the mean, *however* as I mentioned before our distribution is *skewed* which makes this not the case. I will revisit this idea another time.
 
 That's all for now! Next time: Probability density functions!
 
