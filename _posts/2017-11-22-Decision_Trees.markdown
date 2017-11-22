@@ -4,6 +4,14 @@ title:  "Decision Trees"
 date:   2017-11-22 11:31:15 +0100
 categories: machinelearning decisiontrees
 ---
+ 
+Skip to...
+
+[Decision Trees](#decision-trees)
+
+[Decision trees in python](#decision-trees-in-python)
+
+[Random forests](#random-forests)
 
 ### Decision Trees ###
 
